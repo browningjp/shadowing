@@ -102,7 +102,7 @@ const getDateObjectFromEvent = function(ev) {
 const formattedDate = function(myDate) {
     // build the string format dd/mm/yyyy HH:MM
     var outputString = addZero(myDate.getDate());
-    outputString = outputString + "/" + addZero(myDate.getMonth());
+    outputString = outputString + "/" + addZero(myDate.getMonth() + 1);
     outputString = outputString + "/" + myDate.getFullYear();
     outputString = outputString + " " + addZero(myDate.getHours());
     outputString = outputString + ":" + addZero(myDate.getMinutes());
